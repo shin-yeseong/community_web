@@ -1,0 +1,117 @@
+*{
+  margin:0;
+  padding:0;
+}
+body {
+  width:100%;
+  font:0.75em Montserrat,Noto Sans KR,sans-serif  
+}
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  border-bottom: 3px solid #3e5aa1;
+  font-size:0;
+      background: #fff;
+}
+#header .left{
+}
+#header .left img{
+  height:60px;
+  padding:30px 0 ;
+  width:auto;
+}
+#header .right {
+  display: flex;
+}
+#header .right .box {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding:0 0 0 20px;
+}
+#header .right .box .b-t{
+  font-size:14px;
+  text-decoration: none;
+  font-weight:bold;  
+  transition: all 0.3s;
+  color:#000;
+}
+#header .right .box .b-t:hover {
+  color:#3e5aa1;
+}
+
+#header .right .box .header-box {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  width: 30%;
+  box-sizing:border-box;
+  text-align: right;
+  padding: 30px;
+  background:#3e5aa1;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+#header .right .box:hover .header-box{
+  opacity: 1;
+  visibility: visible;
+}
+#header .right .box .header-box a {
+  font-size:14px;
+  text-decoration: none;
+  font-weight:bold; 
+  display:inline-block;
+  padding:0 0 0 20px;
+  color:#fff;
+  
+}
+
+#content{
+  position: relative;
+  width:100%;
+  font-size:50px;
+  text-align: center;
+  margin-top: 280px;
+}
+
+#login-box{
+ 
+  width: 300px;
+  margin: 90px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#login-box input[type="text"],
+    #login-box input[type="password"] {
+      
+      width: 99%;
+      padding: 5px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    #login-box input[type="submit"] {
+      width: 99%;
+      padding: 5px;
+      border: none;
+      border-radius: 5px;
+      background: #ffffff;
+      color: 3e5aa1;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #login-box input[type="submit"]:hover {
+      background: #3e5aa1;
+    }
